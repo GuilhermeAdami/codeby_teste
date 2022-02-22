@@ -1,0 +1,111 @@
+body {
+  font-family: $font-principal;
+  width: 640px;
+  margin: 0 auto;
+}
+.cart {
+  &-container {
+  border: 2px solid $color1;
+  margin: 0 auto;
+  width: 640px;
+  }
+  &-content-titulo {
+    border-bottom: 2px solid $color1;
+    display: flex;
+    flex-direction: column;
+  }
+  &-text {
+    font-size: 30px;
+    font-weight: $bold;
+    margin: 20px auto;
+    text-align: center;
+  }
+  &-itens {
+    display: flex;
+    margin: 30px;
+  }
+  &-product {
+    border: 2px solid $color1;
+    height: 150px;
+    width: 150px;
+  }
+  &-info {
+    margin-left: 30px;
+    .name {
+      font-size: 16px;
+      font-weight: $bold;
+      margin: 25px 0 20px;
+      text-transform: uppercase;
+    }
+    .price {
+      color: $color1;
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+    .final-price {
+      font-size: 18px;
+      font-weight: $medium;
+      margin: 5px 0;
+    }
+  }
+}
+.price {
+  &-content {
+    border-bottom: 2px solid $color1;
+    border-top: 2px solid $color1;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-between;
+    padding: 30px 0;
+    .frete-gratis {
+      align-items: center;
+      background-color: $color4;
+      border-radius: 40px;
+      color: $color3;
+      display: none;
+      font-size: 24px;
+      font-weight: $semi-bold;
+      height: 42px;
+      justify-content: center;
+      margin: 20px auto 0;
+      padding: 5px 0;
+      width: 520px;
+      &.active {
+        display: flex;
+      }
+    }
+  }
+  &-text {
+    font-size: 30px;
+    font-weight: $bold;
+    margin: auto 25px;
+    text-transform: capitalize;
+    width: 50%;
+  }
+  &-final {
+    font-size: 30px;
+    font-weight: $bold;
+    margin: auto 25px;
+    text-transform: capitalize;
+  }
+}
+.buy {
+  &-content {
+    align-items: center;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+  }
+  &-btn {
+    background-color: $color2;
+    border-radius: 10px;
+    border: none;
+    color: $white;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: $bold;
+    height: 80px;
+    width: 580px;
+  }
+}
